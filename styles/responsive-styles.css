@@ -24,9 +24,14 @@
     opacity: 0;
   }
 
-  .blur {
-    filter: blur(0.4rem);
-    transition: all .3s ease;
+  .blur-on {
+    filter: blur(0.2rem);
+    transition: all 0.3s ease;
+  }
+
+  .blur-off {
+    filter: blur(0);
+    transition: all 0.3s ease;
   }
 
   .ham-links {
@@ -35,8 +40,8 @@
     z-index: 1000;
     top: 0;
     right: 0;
-    bottom: 40%;
-    left: 36%;
+    bottom: 30%;
+    left: 20%;
     box-shadow: 0 0 10px rgba(50, 50, 50, 1);
     border-radius: 0 0 0 1rem;
     background-color: #222;
