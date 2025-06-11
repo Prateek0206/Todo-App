@@ -40,7 +40,7 @@
     z-index: 1000;
     top: 0;
     right: 0;
-    bottom: 30%;
+    bottom: 26%;
     left: 20%;
     box-shadow: 0 0 10px rgba(50, 50, 50, 1);
     border-radius: 0 0 0 1rem;
@@ -106,14 +106,17 @@
   .social-links-responsive {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: fixed;
+    z-index: inherit;
     right: 2%;
     top: 50%;
+    gap: 0.4rem;
+    width: 5%;
   }
   #git-hub svg,
   #instagram svg {
     opacity: 1;
-    align-items: center;
-    height: 4vh;
   }
 }

@@ -65,7 +65,6 @@ li a:hover {
 
 #git-hub svg,
 #instagram svg {
-  width: clamp(1.4rem, 2vw, 5rem);
   height: 100%;
   max-width: 100%;
   opacity: 0.6;
@@ -73,8 +72,12 @@ li a:hover {
   border-radius: 50%;
 }
 
+#git-hub svg {
+  width: clamp(1.4rem, 2vw, 5rem);
+}
+
 #instagram svg {
-  width: clamp(1.4rem, 2.4vw, 7rem);
+  width: clamp(2rem, 2.4vw, 7rem);
 }
 
 #git-hub svg:hover,
@@ -87,8 +90,9 @@ li a:hover {
   display: none;
 }
 
-.main-container {
-  min-height: 50vh;
+.main-content {
+  display: flex;
+  min-height: 85vh;
   width: 100vw;
+  margin-top: 15vh;
 }
-
