@@ -8,5 +8,5 @@
 
 - This is my first time writing a README file so I don't know much on what to write.
 
-# Thanks for reading.
+## Thanks for reading.
 
