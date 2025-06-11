@@ -47,7 +47,7 @@
     background-color: #222;
     align-items: center;
     justify-content: center;
-    transform: translateX(100%);
+    transform: translateX(110%);
     transition: all 0.3s ease-in-out;
   }
 
@@ -71,16 +71,49 @@
     align-items: center;
     flex-direction: column;
   }
-  .ham-links div svg {
+  .close-button {
     position: fixed;
     z-index: inherit;
     top: 10%;
     right: 6%;
   }
 
-  li {
+  .ham-links div ul li {
     font-size: clamp(1px, 6vw, 4rem);
     width: 100%;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: start;
+  }
+
+  .ham-links div ul li svg {
+    fill: orange;
+    height: fit-content;
+    width: auto;
+  }
+
+  ul li a:link {
+  }
+  ul li a:visited {
+    color: white;
+  }
+
+  ul li a:active {
+    color: brown;
+  }
+
+  .social-links-responsive {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 2%;
+    top: 50%;
+  }
+  #git-hub svg,
+  #instagram svg {
+    opacity: 1;
+    align-items: center;
+    height: 4vh;
   }
 }

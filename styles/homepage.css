@@ -65,7 +65,7 @@ li a:hover {
 
 #git-hub svg,
 #instagram svg {
-  width: clamp(1rem, 2vw, 5rem);
+  width: clamp(1.4rem, 2vw, 5rem);
   height: 100%;
   max-width: 100%;
   opacity: 0.6;
@@ -74,7 +74,7 @@ li a:hover {
 }
 
 #instagram svg {
-  width: clamp(1rem, 2.4vw, 7rem);
+  width: clamp(1.4rem, 2.4vw, 7rem);
 }
 
 #git-hub svg:hover,
@@ -90,10 +90,5 @@ li a:hover {
 .main-container {
   min-height: 50vh;
   width: 100vw;
-
-  outline: 1px solid;
 }
 
-.outline {
-  outline: 1px solid red;
-}
