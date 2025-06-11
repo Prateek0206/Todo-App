@@ -1,0 +1,81 @@
+/*Responsive nav bar STARTS HERE*/
+
+@media (max-width: 1080px) {
+  * {
+    list-style: none;
+  }
+  .right-nav {
+    display: none;
+  }
+
+  .left-nav {
+    flex: 0.5;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .hamburger-menu {
+    display: flex;
+    justify-content: flex-end;
+    flex: 0.5;
+  }
+
+  .hamburger-menu-inactive {
+    opacity: 0;
+  }
+
+  .blur {
+    filter: blur(0.4rem);
+    transition: all .3s ease;
+  }
+
+  .ham-links {
+    position: fixed;
+    display: flex;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    bottom: 40%;
+    left: 36%;
+    box-shadow: 0 0 10px rgba(50, 50, 50, 1);
+    border-radius: 0 0 0 1rem;
+    background-color: #222;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .ham-links-active {
+    transform: translateX(0);
+  }
+
+  .ham-links div {
+    display: flex;
+    height: 50%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ham-links div ul {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  .ham-links div svg {
+    position: fixed;
+    z-index: inherit;
+    top: 10%;
+    right: 6%;
+  }
+
+  li {
+    font-size: clamp(1px, 6vw, 4rem);
+    width: 100%;
+    text-align: center;
+  }
+}

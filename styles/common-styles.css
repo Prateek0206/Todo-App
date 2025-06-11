@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --font-h1: "Roboto", Arial, sans-serif;
+  --font-para: "Helvetica", Arial, sans-serif;
+  --font-h2: "Bebas Neue", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+}
+
+body {
+  font-family: var(--font-para);
+  background-color: black;
+  color: white;
+  max-width: 100vw;
+  padding-top: 15vh;
+}
+
+h1,
+.heading {
+  font-family: var(--font-h1);
+  font-size: clamp(1rem, 3vw, 6rem);
+}
+
+h2,
+.sub-heading {
+  font-family: var(--font-h2);
+  font-size: clamp(1rem, 2.4vw, 4rem);
+}
+
+li {
+  font-size: clamp(1px, 1.3vw, 3rem);
+}
+
+p {
+  font-family: var(--font-para);
+  font-size: clamp(0.4rem, 1.8rem, 3rem);
+}
+
+.mid-bold {
+  font-weight: 700;
+}
+
+.lighter {
+  font-weight: 200;
+}
+
+.underline {
+  text-decoration: underline;
+}
