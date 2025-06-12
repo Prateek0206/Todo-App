@@ -38,12 +38,8 @@
     position: fixed;
     display: flex;
     z-index: 1000;
-    top: 0;
-    right: 0;
-    bottom: 26%;
-    left: 20%;
+    inset: 0;
     box-shadow: 0 0 10px rgba(50, 50, 50, 1);
-    border-radius: 0 0 0 1rem;
     background-color: #222;
     align-items: center;
     justify-content: center;
@@ -65,42 +61,48 @@
 
   .ham-links div ul {
     display: flex;
-    height: 100%;
+    max-height: max-content;
     width: 100%;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    flex-direction: column;
-  }
-  .close-button {
-    position: fixed;
-    z-index: inherit;
-    top: 10%;
-    right: 6%;
+    margin: 1rem;
+    outline: 1px solid red;
   }
 
   .ham-links div ul li {
-    font-size: clamp(1px, 6vw, 4rem);
+    font-size: clamp(1px, 5vw, 3rem);
     width: 100%;
+    height: max-content;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    text-align: start;
   }
 
   .ham-links div ul li svg {
     fill: orange;
-    height: fit-content;
+    height: 100%;
     width: auto;
   }
 
-  ul li a:link {
-  }
+  ul li a:link,
   ul li a:visited {
     color: white;
   }
 
   ul li a:active {
     color: brown;
+  }
+
+  ul li a:active:hover {
+    background-color: none;
+  }
+
+  .close-button {
+    position: fixed;
+    z-index: inherit;
+    top: 10%;
+    right: 6%;
   }
 
   .social-links-responsive {
