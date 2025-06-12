@@ -6,7 +6,7 @@
   }
 
   a:focus{
-    outline: 2px solid blue;
+    outline:none
   }
   .right-nav {
     display: none;
