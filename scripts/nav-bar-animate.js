@@ -16,11 +16,4 @@ hamburgerMenu.addEventListener("click", () => {
     header.classList.remove("blur-on");
     header.classList.add("blur-off");
   });
-
-  mainContainer.addEventListener("click", () => {
-    hamburgerMenu.classList.remove("hamburger-menu-inactive");
-    hamLinks.classList.remove("ham-links-active");
-    header.classList.remove("blur-on");
-    header.classList.add("blur-off");
-  });
 });

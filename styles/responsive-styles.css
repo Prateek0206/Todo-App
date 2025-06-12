@@ -61,13 +61,14 @@
 
   .ham-links div ul {
     display: flex;
-    max-height: max-content;
+    max-height: 30vh;
+
     width: 100%;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     margin: 1rem;
-    outline: 1px solid red;
+    gap: 1rem;
   }
 
   .ham-links div ul li {
@@ -83,6 +84,14 @@
     fill: orange;
     height: 100%;
     width: auto;
+  }
+
+  .ham-links div ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 100%;
   }
 
   ul li a:link,
