@@ -4,6 +4,10 @@
   * {
     list-style: none;
   }
+
+  a:focus{
+    outline: 2px solid blue;
+  }
   .right-nav {
     display: none;
   }
@@ -44,6 +48,7 @@
     align-items: center;
     justify-content: center;
     transform: translateX(110%);
+    opacity: 0.7;
     transition: all 0.3s ease-in-out;
     overflow: scroll;
   }
@@ -63,7 +68,6 @@
   .ham-links div ul {
     display: flex;
     max-height: 30vh;
-
     width: 100%;
     flex-direction: column;
     justify-content: space-evenly;
@@ -111,7 +115,7 @@
   .close-button {
     position: fixed;
     z-index: inherit;
-    top: 10%;
+    top: 6.5%;
     right: 6%;
   }
 
