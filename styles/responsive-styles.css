@@ -45,6 +45,7 @@
     justify-content: center;
     transform: translateX(110%);
     transition: all 0.3s ease-in-out;
+    overflow: scroll;
   }
 
   .ham-links-active {
@@ -72,7 +73,7 @@
   }
 
   .ham-links div ul li {
-    font-size: clamp(1px, 5vw, 3rem);
+    font-size: clamp(1px, 5vw, 2rem);
     width: 100%;
     height: max-content;
     display: flex;
@@ -82,7 +83,7 @@
 
   .ham-links div ul li svg {
     fill: orange;
-    height: 100%;
+    height: max-content;
     width: auto;
   }
 
