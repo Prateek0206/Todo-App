@@ -92,7 +92,7 @@ li a:hover {
 
 .main-content {
   display: flex;
-  min-height: 85vh;
+  flex-direction: column;
   width: 100vw;
   margin-top: 15vh;
 }
