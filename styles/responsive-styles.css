@@ -5,6 +5,10 @@
     list-style: none;
   }
 
+  body {
+    overflow: scroll;
+  }
+
   a:focus {
     outline: none;
   }
@@ -143,15 +147,7 @@
   /*------Hero banner------*/
 
   #hero-banner {
-    gap: 0.4rem;
-    width: 90%;
-  }
-
-  .inner-text {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    font-size: clamp(1px, 100%, 4rem);
-    text-align: center;
+    text-wrap: balance;
+    width: 95%;
   }
 }
