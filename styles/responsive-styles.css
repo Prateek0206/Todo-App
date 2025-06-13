@@ -5,8 +5,12 @@
     list-style: none;
   }
 
-  a:focus{
-    outline:none
+  a:focus {
+    outline: none;
+  }
+
+  .nav-bar {
+    background-color: black;
   }
   .right-nav {
     display: none;
@@ -48,7 +52,7 @@
     align-items: center;
     justify-content: center;
     transform: translateX(110%);
-    opacity: 0.7;
+    opacity: 0.9;
     transition: all 0.3s ease-in-out;
     overflow: scroll;
   }
@@ -125,7 +129,7 @@
     justify-content: center;
     align-items: center;
     position: fixed;
-    z-index: inherit;
+    z-index: 10000;
     right: 2%;
     top: 50%;
     gap: 0.4rem;
@@ -134,5 +138,20 @@
   #git-hub svg,
   #instagram svg {
     opacity: 1;
+  }
+
+  /*------Hero banner------*/
+
+  #hero-banner {
+    gap: 0.4rem;
+    width: 90%;
+  }
+
+  .inner-text {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    font-size: clamp(1px, 100%, 4rem);
+    text-align: center;
   }
 }

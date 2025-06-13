@@ -3,11 +3,20 @@
   padding: 0;
   margin: 0;
 }
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
   --font-h1: "Roboto", Arial, sans-serif;
   --font-para: "Helvetica", Arial, sans-serif;
-  --font-h2: "Roboto", Arial, sans-serif;
+}
+
+/* <weight>: Use a value from 300 to 800*/
+
+.open-sans-text {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
 
 html {
@@ -30,8 +39,11 @@ h1,
 
 h2,
 .sub-heading {
-  font-family: var(--font-h2);
+  font-family: var(--font-h1);
   font-size: clamp(1rem, 2.4vw, 4rem);
+}
+h3 {
+  font-size: clamp(12px, 1.4vw, 3rem);
 }
 
 li {
@@ -48,10 +60,9 @@ p {
 }
 
 .lighter {
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .underline {
   text-decoration: underline;
 }
-
