@@ -166,7 +166,7 @@ li a:hover {
   left: 0;
   bottom: 0;
   width: 0%;
-  height: 0.4px;
+  height: clamp(.2px,.2vh,4px);
   background: white;
   transition: all 0.2s ease-in-out;
 }
