@@ -6,7 +6,7 @@
   }
 
   body {
-    overflow: scroll;
+    overflow: none;
   }
 
   a:focus {

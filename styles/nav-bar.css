@@ -47,7 +47,7 @@ li a:visited {
   text-decoration: none;
   padding: clamp(0.8rem, 12%, 5rem) clamp(1.1rem, 25%, 7rem);
   border-radius: clamp(1px, 0.5vw, 3rem);
-  transition: all 0.2s ease-in-out; 
+  transition: all 0.2s ease-in-out;
 }
 
 li a:hover {
@@ -93,4 +93,11 @@ li a:hover {
 
 .social-links-responsive {
   display: none;
+}
+
+h2 a:link,
+h2 a:visited,
+h2 a:hover {
+  color: white;
+  text-decoration: none;
 }
