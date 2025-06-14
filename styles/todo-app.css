@@ -5,11 +5,12 @@
   justify-content: center;
   padding: 1rem;
   width: 100vw;
-  height: clamp(10rem, 100vh, 1000rem);
+  height: calc(100vh + 10rem);
   margin-top: 12vh;
 }
 
 .input-box {
+  margin-top: min(4rem, 10%);
   flex: 0.1;
   display: flex;
   align-items: center;
@@ -28,7 +29,7 @@
   caret-color: white;
   color: white;
   font-size: clamp(1rem, 1vw, 3rem);
-  border: clamp(2px, 0.2vw, .6rem) solid rgba(255, 255, 255,0.7);
+  border: clamp(2px, 0.2vw, 0.6rem) solid rgba(255, 255, 255, 1);
   border-radius: clamp(2.4rem, 2vw, 6rem);
 }
 .input-box input:focus {
@@ -37,7 +38,7 @@
 
 .input-box input::placeholder {
   color: white;
-  font-size: clamp(.8rem, 1vw, 5rem);
+  font-size: clamp(0.8rem, 1vw, 5rem);
 }
 .input-box button {
   display: flex;
@@ -47,7 +48,7 @@
   aspect-ratio: 1/1;
   border-radius: 50%;
   background-color: rgb(0, 0, 0);
-  border: clamp(2px, 0.2vw, .6rem) solid rgba(255, 255, 255, 0.7);
+  border: clamp(2px, 0.2vw, 0.6rem) solid rgba(255, 255, 255, 1);
   cursor: pointer;
   transition: all 0.4s ease;
   transform-origin: center;
@@ -66,10 +67,10 @@
 .todo-list-display {
   flex: 0.9;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   width: 100vw;
-  height: 80%;
+  height: 100%;
   padding: 2rem 2rem;
   gap: clamp(2rem, 12vh, 6rem);
 }

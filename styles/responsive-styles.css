@@ -156,9 +156,22 @@
   .input-box {
     width: 100vw;
     gap: .5rem;
+
   }
+
+   .input-box {
+    height: 50%;
+   }
   .todo-list-display {
     flex-direction: column;
     gap: clamp(2rem, 12vh, 6rem);
+
+  }
+
+  .todo-list-display > *{
+
+    min-height: max-content;
+    height: 50%;
+    flex: .5;
   }
 }
