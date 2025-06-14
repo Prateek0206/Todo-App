@@ -1,0 +1,121 @@
+#parent-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  width: 100vw;
+  height: clamp(10rem, 100vh, 1000rem);
+  margin-top: 12vh;
+}
+
+.input-box {
+  flex: 0.1;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  padding: min(0.2rem, 2%);
+}
+
+.input-box input {
+  height: 60%;
+  width: 80%;
+  background-color: rgb(0, 0, 0);
+  border: none;
+  padding: min(1.4rem, 10%);
+  caret-color: white;
+  color: white;
+  font-size: clamp(1.2rem, 1vw, 10rem);
+  border-radius: clamp(2.4rem, 2vw, 6rem);
+  box-shadow: 0 0 30px rgb(58, 53, 53);
+}
+.input-box input:focus {
+  outline: none;
+}
+
+.input-box input::placeholder {
+  color: white;
+  font-size: clamp(1rem, 1vw, 10rem);
+}
+.input-box button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: clamp(0.3rem, 50%, 5rem);
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0);
+  border: clamp(0.1rem, 0.1vw, 1rem) solid rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transition: all 0.4s ease;
+  transform-origin: center;
+  box-shadow: 0 0 2rem rgb(58, 53, 53);
+}
+
+.input-box button:hover {
+  transform: rotate(90deg);
+}
+
+.input-box button svg {
+  height: 100%;
+  width: 80%;
+}
+
+.todo-list-display {
+  flex: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 80%;
+  padding: 2rem 2rem;
+  gap: 1rem;
+}
+
+.todo-list-display > * {
+  flex: 0.5;
+  height: 100%;
+  padding: min(1rem, 5%);
+  overflow: scroll;
+}
+
+.left-container {
+  width: 100%;
+}
+
+.right-container {
+  width: 100%;
+}
+
+.todo-list-display > * h2 {
+  padding: min(1rem, 6%);
+  text-align: center;
+  border-radius: clamp(0.5rem, 1vw, 1rem);
+}
+
+.task-list {
+  margin-top: min(1rem, 10%);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1rem, 1.2vh, 4rem);
+}
+
+.task-list span {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 1rem 0 1rem 1rem;
+  font-size: clamp(0.8rem, 1.4vw, 3rem);
+}
+
+.task-list span:nth-child(even) {
+  background-color: rgb(34, 34, 34);
+  border-radius: clamp(1rem, 1.2vw, 4rem);
+}
+
+.task-list span:nth-child(odd) {
+  border:clamp(2px,.3vw,2rem) solid rgb(34, 34, 34);
+  border-radius: clamp(1rem, 1.2vw, 4rem);
+}

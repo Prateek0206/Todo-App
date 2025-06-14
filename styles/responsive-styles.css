@@ -150,4 +150,14 @@
     text-wrap: balance;
     width: 95%;
   }
+
+  /*----Todo page----*/
+
+  .input-box {
+    width: 100vw;
+    gap: .5rem;
+  }
+  .todo-list-display {
+    flex-direction: column;
+  }
 }
