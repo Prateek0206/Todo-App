@@ -1,12 +1,10 @@
-console.log("nav-bar-animate.js loaded");
-
 const hamburgerMenu = document.querySelector(".js-hamburger-menu");
 const closingMenu = document.querySelector(".js-close-button");
 const hamLinks = document.querySelector(".js-ham-links");
 const header = document.querySelector(".nav-bar");
 const mainContainer = document.querySelector(".js-main-content");
 const socialLinks = document.querySelector(".js-social-links-responsive");
-const main = document.querySelector('main');
+const main = document.querySelector("main");
 
 hamburgerMenu.addEventListener("click", () => {
   hamburgerMenu.classList.add("hamburger-menu-inactive");

@@ -105,20 +105,42 @@
   gap: clamp(1rem, 1.2vh, 4rem);
 }
 
-.task-list span {
+.task-name {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   height: 100%;
-  padding: 1rem 0 1rem 1rem;
+  padding: 1rem;
   font-size: clamp(0.8rem, 1.4vw, 3rem);
 }
 
-.task-list span:nth-child(even) {
+.task-name > span {
+  flex: 0.84;
+}
+
+.options {
+  flex: 0.16;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.options span {
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.options span:hover {
+  transform: scale(1.4);
+
+}
+
+.task-list > div:nth-child(even) {
   background-color: rgb(34, 34, 34);
   border-radius: clamp(1rem, 1.2vw, 4rem);
 }
 
-.task-list span:nth-child(odd) {
+.task-list > div:nth-child(odd) {
   border: clamp(2px, 0.3vw, 2rem) solid rgb(34, 34, 34);
   border-radius: clamp(1rem, 1.2vw, 4rem);
 }
