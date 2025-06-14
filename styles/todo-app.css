@@ -6,7 +6,7 @@
   padding: 1rem;
   width: 100vw;
   height: clamp(10rem, 100vh, 1000rem);
-  margin-top: 12vh;
+  margin-top: 16vh;
 }
 
 .input-box {
