@@ -221,6 +221,7 @@ taskList.addEventListener("click", (event) => {
                   </div>
                 </div>`;
       doneTaskList.innerHTML = "";
+      taskListInnerHtml=''
       doneTaskList.innerHTML = doneTaskListName;
     } else {
       console.log("2");
